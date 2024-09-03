@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "esnext", // 生成代码的模板标准
+    "target": "ES5", // 目标语言的版本
+    "lib": ["ES2015", "dom", "ES2016", "ES2021"],
+    "allowJs": true, // 允许编译器编译JS，JSX文件
+    "checkJs": true, // 允许在JS文件中报错，通常与allowJS一起使用
+    "jsx": "react", // 控制如何在 JavaScript 文件中发出 JSX 构造。这仅影响以.tsx文件开头的 JS 文件的输出。如果jsx被设置为"react"，则JSX将被编译为React.createElement调用
+    "moduleResolution": "node", // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
+    "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致
+    "noImplicitReturns": true, // 函数没有返回值时，报错
+    "noImplicitThis": true, // 在具有隐含“any”类型的“this”表达式上引发错误。
+    "noImplicitAny": false, // 在某些不存在类型注释的情况下，当 TypeScript 无法推断类型时，它会回退到变量的any类型。
+    "importHelpers": true,
+    "strictNullChecks": true, // 严格的空检查 null undefined
+    "esModuleInterop": true, // 允许export=导出，由import from 导入
+    "emitDecoratorMetadata": true,
+    "noUnusedLocals": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "noUnusedParameters": true,
+    // "typeRoots": [], // 声明文件目录，默认时node_modules/@types
+    // "paths": {}, // 路径映射，相对于baseUrl
+    // "types": [] // 加载的声明文件包
+  }
+}
