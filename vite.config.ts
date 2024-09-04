@@ -3,6 +3,10 @@ import { createMpaPlugin } from "vite-plugin-virtual-mpa";
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  define: {
+    global: 'globalThis',
+    process,
+  },
   // ...
   plugins: [
     createMpaPlugin({

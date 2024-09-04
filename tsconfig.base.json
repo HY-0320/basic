@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "esnext", // 生成代码的模板标准
-    "target": "ES5", // 目标语言的版本
+    "target": "ES6", // 目标语言的版本
     "lib": ["ES2015", "dom", "ES2016", "ES2021"],
     "allowJs": true, // 允许编译器编译JS，JSX文件
     "checkJs": true, // 允许在JS文件中报错，通常与allowJS一起使用

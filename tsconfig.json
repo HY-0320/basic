@@ -3,7 +3,7 @@
   "extends": "./tsconfig.base.json",
   // 指定需要包含的文件或目录
   "include": [
-    "./Promise/*.ts",
+    "pages",
   ],
   // 指定编译选项
   "compilerOptions": {
