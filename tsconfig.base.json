@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "esnext", // 生成代码的模板标准
     "target": "ES6", // 目标语言的版本
-    "lib": ["ES2015", "dom", "ES2016", "ES2021", "ES5", "ES6"],
+    "lib": ["ES2015", "dom", "ES2016", "ES2021"],
     "allowJs": true, // 允许编译器编译JS，JSX文件
     "checkJs": true, // 允许在JS文件中报错，通常与allowJS一起使用
     "jsx": "react", // 控制如何在 JavaScript 文件中发出 JSX 构造。这仅影响以.tsx文件开头的 JS 文件的输出。如果jsx被设置为"react"，则JSX将被编译为React.createElement调用

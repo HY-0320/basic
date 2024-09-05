@@ -5,8 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   define: {
     global: 'globalThis',
-    // 定义全局变量
-    'process': process,
+    process,
   },
   // ...
   plugins: [

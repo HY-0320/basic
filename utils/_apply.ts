@@ -1,13 +1,15 @@
-export function _apply(fn: Function, args: any[]) {
-  if (typeof fn !== 'function') {
-    throw new TypeError('fn is not a function')
+export function _apply(ctx, args) {
+  if(typeof this !== 'function') {
+    throw new TypeError(`${this} is not function`)
   }
 
-  const context = Object(this) ?? window
-  const symbolKey = Symbol('key')
-
-  context[symbolKey] = fn
-  const result = context[symbolKey](...args)
+  const context = Object(ctx) || globalThis
+  const symbolKey = Symbol('KEY')
+  context[symbolKey] = this
+  const res = context[symbolKey](...args)
   delete context[symbolKey]
-  return result
+  return res
 }
+
+// @ts-ignore
+Function.prototype._apply = _apply

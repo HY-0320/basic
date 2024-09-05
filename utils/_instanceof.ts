@@ -8,9 +8,10 @@ export function _instanceof(L: any, R: any) {
 
   while(L.__proto__ !== null) {
     if(L.__proto__ === R.prototype) {
-      return true;
+      return true
     }
-    L = L.__proto__;
+
+    L = L.__proto__
   }
 
   return false
