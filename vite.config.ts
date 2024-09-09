@@ -14,7 +14,7 @@ export default defineConfig({
       pages: [
         {
           name: "promise",
-          entry: "/pages/promise/index.tsx",
+          entry: "/src/pages/promise/index.tsx",
           template: "vite/index.html",
           filename: "promise/index.html",
         },
